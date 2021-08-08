@@ -1,0 +1,48 @@
+.two_columns {
+display: flex;
+justify-content: space-between;
+}
+.avatar {
+   width: 250px;
+   height: 250px; 
+border-radius: 50%;
+border: 10px solid #c9ada7;
+}
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main {
+    margin-left: 40px;
+    
+}
+html {
+    font-family: Hahmlet, serif;
+    color: #4a4e69;
+}
+aside {
+    width: 320px;
+    background-color: #f2e9e4;
+    padding: 0 20px;
+    flex: 1;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+header {
+    text-align: center;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+.rs-logo {
+    height: 50px;
+}
