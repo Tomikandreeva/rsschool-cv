@@ -18,16 +18,15 @@ main {
     
 }
 html {
-    font-family: Hahmlet, serif;
+    font-family: Hahmlet, sans-serif;
     color: #4a4e69;
 }
 aside {
     width: 320px;
-    background-color: #f2e9e4;
+    background-color: #c9ada7;
     padding: 0 20px;
     flex: 1;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
 }
 header {
     text-align: center;
@@ -35,6 +34,9 @@ header {
 html,body {
     margin: 0;
     padding: 0;
+}
+body{
+    background-color: #f2e9e4;
 }
 footer{
     display: flex;
@@ -45,4 +47,8 @@ footer{
 }
 .rs-logo {
     height: 50px;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
 }
