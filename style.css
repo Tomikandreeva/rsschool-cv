@@ -1,54 +1,73 @@
 .two_columns {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .avatar {
-   width: 250px;
-   height: 250px; 
-border-radius: 50%;
-border: 10px solid #c9ada7;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 10px solid #c9ada7;
 }
 .left-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 main {
-    margin-left: 40px;
-    
+  margin-left: 40px;
 }
 html {
-    font-family: Hahmlet, sans-serif;
-    color: #4a4e69;
+  font-family: Hahmlet, sans-serif;
+  color: #4a4e69;
 }
 aside {
-    width: 320px;
-    background-color: #c9ada7;
-    padding: 0 20px;
-    flex: 1;
-    border-radius: 20px;
+  width: 320px;
+  background-color: #c9ada7;
+  padding: 0 20px;
+  flex: 1;
+  border-radius: 20px;
 }
 header {
-    text-align: center;
+  text-align: center;
 }
-html,body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: #f2e9e4;
+body {
+  background-color: #f2e9e4;
 }
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 .rs-logo {
-    height: 50px;
+  height: 50px;
 }
-.container{
-    max-width: 960px;
-    margin: 0 auto;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+  .two_columns {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  aside {
+    width: auto;
+    margin: 0;
+  }
+  main {
+    margin: 0;
+  }
+  .avatar {
+    max-width: 100%;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
