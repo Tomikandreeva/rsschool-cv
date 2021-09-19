@@ -10,7 +10,15 @@
     />
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/codepen-embed.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </head>
 
   <body>
@@ -129,29 +137,31 @@
           <section>
             <h2>Code example</h2>
             <pre>
-            <code>
-            function absentVowel(x){
-              var hasA=x.includes("a")
-              if (!hasA){
-                return 0;
+            <code class="language-javascript">
+              function getLength(arr){
+                //return length of arr
+                return arr.length
               }
-              var hasE=x.includes("e")
-              if (!hasE){
-                return 1;
+              function getFirst(arr){
+                //return the first element of arr
+                return arr[0]
               }
-              var hasI=x.includes("i")
-              if (!hasI){
-                return 2;
+              function getLast(arr){
+                //return the last element of arr
+                var lastIndex=arr.length-1
+                return arr[lastIndex]
               }
-              var hasO=x.includes("o")
-              if (!hasO){
-                return 3;
+              function pushElement(arr){
+                var el=1;
+                //push el to arr
+                arr.push(el)
+                return arr
               }
-              var hasU=x.includes("u")
-              if (!hasU){
-                return 4;
+              function popElement(arr){
+                //pop an element from arr
+                arr.pop()
+                return arr
               }
-            }
           </code>
       </pre>
           </section>

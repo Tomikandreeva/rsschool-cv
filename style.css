@@ -51,6 +51,9 @@ footer {
   max-width: 960px;
   margin: 0 auto;
 }
+code {
+    border-radius: 20px;
+}
 
 @media screen and (max-width: 425px) {
   .two_columns {
