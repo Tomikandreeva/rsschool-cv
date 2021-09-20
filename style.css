@@ -60,6 +60,7 @@ nav {
   background-color: #c9ada7;
   border-radius: 20px;
   margin-top: 10px;
+  overflow: hidden;
 }
 nav ul {
   display: flex;
