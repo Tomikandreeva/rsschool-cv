@@ -19,6 +19,7 @@ main {
 html {
   font-family: Hahmlet, sans-serif;
   color: #4a4e69;
+  scroll-behavior: smooth;
 }
 aside {
   width: 320px;
@@ -54,6 +55,13 @@ footer {
 }
 code {
     border-radius: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
 }
 
 @media screen and (max-width: 425px) {
