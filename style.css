@@ -36,6 +36,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   background-color: #f2e9e4;
@@ -88,7 +90,29 @@ nav ul li {
   display: none;
   font-weight: bolder;
 }
-@media screen and (max-width: 425px) {
+.projects {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project {
+  flex: 1 0 48%;
+  display: flex;
+  text-align: center;
+}
+.project h3 {
+  margin-top: 0;
+}
+.project figure {
+  margin:  5px;
+  border: 2px solid #c9ada7;
+  border-radius: 20px;
+  padding: 20px;
+}
+.project img {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
   .two_columns {
     flex-direction: column;
     padding: 0 10px;
@@ -108,6 +132,9 @@ nav ul li {
   }
   nav {
     display: none;
+  }
+  .project {
+    flex-basis: 100%;
   }
   #menuToggle {
     display: block;
